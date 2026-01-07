@@ -1,0 +1,6 @@
+{
+  "balance_threshold": 1000000000000000000,  // 1 ETH
+  "profit_threshold": 5000000000000000000,  // 5 ETH
+  "max_wait_seconds": 3600,                 // 1 hour max
+  "check_interval": 1                       // 1 second
+}
