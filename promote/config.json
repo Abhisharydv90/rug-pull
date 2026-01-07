@@ -1,0 +1,12 @@
+{
+  "messages": [
+    "Join our revolutionary project!",
+    "Huge gains ahead! $TOKEN",
+    "Limited time opportunity!",
+    "Exclusive investment opportunity!",
+    "Early bird special available now!"
+  ],
+  "hashtags": ["#crypto", "#blockchain", "#invest", "#scam"],
+  "frequency_minutes": 5,
+  "random_delay": true
+}
