@@ -1,0 +1,25 @@
+name: Rug Pull System
+
+on:
+  schedule:
+    - cron: '*/5 * * * *'  
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Deploy Contract
+        run: |
+          pip install web3
+          python deploy/deploy.py
+          
+      - name: Promote Project
+        run: |
+          pip install tweepy
+          python promote/promote.py &
+          
+      - name: Monitor Progress
+        run: |
+          python monitor/monitor.py
